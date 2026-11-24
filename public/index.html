@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#252246" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fff8ee" media="(prefers-color-scheme: light)">
+<title>大阪旅行手册｜2027.02.15–24</title>
+<style>
+:root{color-scheme:light dark;--paper:#fff8ee;--card:#fffdf9;--ink:#252246;--muted:#5b536b;--line:#ded3e4;--action:#593b92;--map:#efe8f4;--water:#d5e6f5;--accent:#ffc985;--hero:#2d2453;--pill:#f5e4fc}
+@media(prefers-color-scheme:dark){:root{--paper:#191627;--card:#242037;--ink:#f9f1ff;--muted:#c7bbd6;--line:#493f61;--action:#e0c8ff;--map:#302741;--water:#243b55;--pill:#47365d}}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.55 system-ui,sans-serif}main,header,footer{max-width:920px;margin:auto;padding:0 clamp(16px,4vw,38px)}header{padding-top:28px;padding-bottom:18px;display:flex;justify-content:space-between;gap:16px;align-items:center}h1,h2,h3,p,figure{margin:0}h1{font-size:clamp(1.3rem,4vw,2rem);letter-spacing:-.04em}h2{font-size:clamp(1.4rem,4vw,2rem);letter-spacing:-.035em;margin-bottom:12px}h3{font-size:1.13rem}small,.muted{color:var(--muted)}header small{font-size:.87rem}a{color:var(--action);text-underline-offset:3px}button,.button{font:inherit;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--action);padding:8px 12px;cursor:pointer;display:inline-block;text-decoration:none}button{white-space:nowrap}section{margin-bottom:27px;scroll-margin-top:12px}.hero{padding:clamp(18px,5vw,38px);background:var(--hero);color:#fff7ee;border-radius:22px;position:relative;overflow:hidden}.hero small{color:#e8dbf4}.hero h2{color:var(--accent);font-size:1rem;letter-spacing:.14em}.hero h3{font-size:clamp(1.25rem,5vw,2.2rem);margin-bottom:3px}.digits{display:grid;grid-template-columns:repeat(4,1fr);max-width:540px;gap:7px;margin-top:18px}.digits div{padding:6px 2px 8px;border-top:1px solid #8f7bad;text-align:center}.digits strong{display:block;font-size:clamp(1.9rem,8vw,4rem);font-variant-numeric:tabular-nums;line-height:1.15;color:#fff8ee}.digits span{font-size:.85rem;color:#e8dbf4}nav{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 25px}nav a{padding:5px 10px;border:1px solid var(--line);border-radius:20px;text-decoration:none;font-size:.9rem}.panel,.day,.booking{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}.panel p+p,.booking p+p{margin-top:8px}.booking-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr));gap:10px}.booking h3{margin-bottom:8px}.map{background:var(--map);width:100%;height:auto;display:block;border-radius:13px}.map text{fill:var(--ink);font-family:system-ui,sans-serif;font-weight:700;paint-order:stroke;stroke:var(--map);stroke-width:4px;stroke-linejoin:round}.map a:focus text,.map a:hover text{text-decoration:underline}.map .water{fill:var(--water)}.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:5px 10px;list-style:none;margin:12px 0 7px;padding:0}.legend a{text-decoration:none}.dot{display:inline-block;width:.8em;height:.8em;border-radius:50%;background:var(--route);margin-right:5px}.day{margin-bottom:9px;border-inline-start:5px solid var(--route)}.day h3 span{font-size:.85rem;color:var(--muted);margin-right:.55em}.day details{margin:8px 0;border-bottom:1px solid var(--line);padding-bottom:7px}.day summary{color:var(--action);cursor:pointer;padding:6px 0}.day details .button{margin:8px 0}.day ol{list-style:none;padding:0;margin:0}.day li{display:grid;grid-template-columns:6.2rem minmax(0,1fr);gap:8px;padding:9px 0;border-bottom:1px solid var(--line)}.day li:last-child{border:0}.day time,.time{font-size:.9rem;font-weight:650;font-variant-numeric:tabular-nums}.day time small,.time small{display:block;font-weight:400}.tag{display:inline-block;border-radius:6px;background:var(--pill);padding:1px 6px;font-size:.84rem;margin-left:5px}ul{padding-left:1.3em}li+li{margin-top:3px}.day .segments{display:flex;flex-wrap:wrap;gap:4px 12px;margin:0 0 8px}.night{margin-top:6px;font-size:.9rem;color:var(--muted)}footer{padding-bottom:30px;font-size:.9rem;color:var(--muted)}:focus-visible{outline:2px solid var(--action);outline-offset:3px}
+@media(max-width:450px){header{align-items:flex-start}.day li{grid-template-columns:5.1rem minmax(0,1fr)}.panel,.day,.booking{padding:13px}}
+</style>
+</head>
+<body>
+<header><div><h1>大阪旅行手册</h1><small>2027.02.15–24 · 双人旅行 · 9 晚</small></div><button id="save" type="button">保存离线版</button></header>
+<main>
+<section class="hero" aria-labelledby="now-label">
+<h2 id="now-label">此刻关注</h2><h3 id="next">香港快运 UO850 出发</h3><small id="when">2/15 09:45 HKT（UTC+8）</small>
+<div class="digits" role="timer" aria-label="距离下一个行程" aria-live="off"><div><strong id="days">—</strong><span>天</span></div><div><strong id="hours">—</strong><span>时</span></div><div><strong id="minutes">—</strong><span>分</span></div><div><strong id="seconds">—</strong><span>秒</span></div></div>
+</section>
+<nav aria-label="手册目录"><a href="#overview">路线</a><a href="#bookings">订单</a><a href="#itinerary">逐日行程</a><a href="#todo">待办</a><a href="#tips">贴士</a></nav>
+<section id="overview"><h2>行程总览地图</h2><div class="panel"><figure id="regional"></figure><ul id="legend" class="legend"></ul><p class="muted">路线为示意。2/15–23 每晚暂住大阪，酒店待定。2/24 返抵香港，夜间接驳待确认。</p></div></section>
+<section id="bookings"><h2>订单与演出</h2>
+<div class="booking-grid">
+<article class="booking"><h3>香港快运 · 往返机票</h3><p><b>2/15 UO850</b><br>09:45 HKT <a data-place="hkg2">香港国际机场 T2</a><br>14:20 JST <a data-place="kix">大阪关西国际机场 T1</a></p><p><b>2/24 UO689</b><br>20:15 JST <a data-place="kix">大阪关西国际机场 T1</a><br>23:55 HKT <a data-place="hkg1">香港国际机场 T1</a></p><p class="muted">香港大屿山赤鱲角 · 日本大阪府泉佐野市泉州空港北 1<br><a href="https://www.hkexpress.com/travel-help/check-in-guide">航空公司值机</a> · <a href="https://www.hkexpress.com/en/help-and-support/contact-us">客服 WhatsApp +852 3951 7229</a></p></article>
+<article class="booking"><h3>ENHYPEN · 大阪京瓷巨蛋</h3><p><a data-place="dome">大阪市西区千代崎 3 丁目中 2-1</a><br><a href="tel:+81665860106">场馆 +81 6 6586 0106</a></p><p><b>2/19 P 席</b> · 票务交接待定。12:30–14:30 JST 本人确认，15:00 JST P 席入场，15:40 JST 彩排，18:00 JST 正演。</p><p><b>2/20 自购票</b> · 已付款，待取纸票。14:00 JST 入场，16:00 JST 正演。</p></article>
+<article class="booking"><h3>住宿与交通</h3><p>2/15 入住、2/24 退房 · 两人一间 · 9 晚。酒店待定，优先比较<a data-place="namba">难波</a>和<a data-place="nippon">日本桥</a>。</p><p>住宿预算两人合计低于人民币 4,000 元（含税）。全程暂按公共交通安排。</p></article>
+</div></section>
+<section id="itinerary"><h2>逐日行程</h2><p class="muted">日本时间 JST＝UTC+9 · 香港时间 HKT＝UTC+8。带「建议」的时间可调整。</p><div id="daily"></div></section>
+<section id="todo"><h2>待办清单</h2><div class="panel"><ul>
+<li>确定大阪酒店，核对双人入住的 9 晚含税总价。</li>
+<li>核对 2/15 早班机前及 2/24 深夜抵港后的香港接驳。</li>
+<li>购买两人的 2/16 USJ 指定日门票，确定是否提前锁定超级任天堂世界入场时段。</li>
+<li>2/15 入住后领 2/20 纸票，出门前看购票页是否限定便利店。</li>
+<li>补录 2/19 票务交接地点和时间，预留步行及排队，14:30 JST 前办完本人确认。</li>
+</ul></div></section>
+<section id="tips"><h2>实用贴士</h2><div class="panel">
+<p><b>机场与接驳</b> · 去程香港 T2、回程抵港 T1。2/24 建议预留一小时以上市区至关西机场交通，目标 17:15 JST 左右到 T1。深夜抵港接驳按实际目的地确认。<a href="https://www.hkexpress.com/travel-help/check-in-guide">值机指引</a></p>
+<p><b>2/19 彩排</b> · 1 号门前本人确认窗口 12:30–14:30 JST。建议赶第一段窗口；证件和交接要求以票方通知为准。</p>
+<p><b>2/20 纸票</b> · 领取窗口 2/9 13:00–2/20 23:59 JST。订单列出罗森或 Ministop，门店限制以「我的页面」为准。演出当日 16:00 JST 已开演。</p>
+<p><b>USJ 与假日</b> · 把 USJ 放在 2/16 周二，2/18 可作改期备选。入园票按日期买，任天堂区域有另行控流。2/23 是天皇诞生日，巨蛋另有大型活动；这天留给大阪市区弹性安排。若改去热门预约景点，先看日期库存。<a href="https://www.usj.co.jp/web/en/us/tickets">USJ 门票</a> · <a href="https://www.usj.co.jp/web/en/us/enjoy/numbered-ticket/timed-entry-ticket">区域入场</a> · <a href="https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html">日本祝日</a></p>
+<p><b>闭馆与预约</b> · 京都铁道博物馆通常周三闭馆，2/17 不排。大阪城天守阁常规休馆为年末年初；出发前复核临时调整。伏见稻荷普通参拜免费；若想加京都仙洞御所，提前预约。清水寺和东大寺大佛殿为付费参观。神户周一只排街区和港边。<a href="https://www.kyotorailwaymuseum.jp/en/access/">铁道博物馆</a> · <a href="https://www.osakacastle.net/guide/">大阪城</a> · <a href="https://sankan.kunaicho.go.jp/multilingual/lang/en/information.html">仙洞御所</a> · <a href="https://www.kiyomizudera.or.jp/en/location/">清水寺</a> · <a href="https://www.todaiji.or.jp/en/information/haikan/">东大寺</a></p>
+<p><b>离线与地图</b> · 出发前保存 HTML 文件，用浏览器打开。手册和示意地图可以离线查看。Google 地图导航要联网；部分设备的公交路线会忽略中途点，可点逐段路线。</p>
+</div></section>
+</main>
+<footer>演出时间以主办方和个人票务通知为准。<a href="https://enhypen-jp.weverse.io/schedule/085940c3eaf3">演出公告</a></footer>
+<script>
+"use strict";
+const places = {
+  hkg2:["香港机场 T2","Hong Kong International Airport Terminal 2"],
+  hkg1:["香港机场 T1","Hong Kong International Airport Terminal 1"],
+  kix:["关西机场 T1","Kansai International Airport Terminal 1"],
+  namba:["难波","Nankai Namba Station Osaka"],
+  nippon:["日本桥","Kintetsu-Nippombashi Station Osaka"],
+  doton:["道顿堀","Dotonbori Ebisubashi Osaka"],
+  store:["便利店取票","Lawson near Namba Station Osaka"],
+  usj:["USJ","Universal Studios Japan Osaka"],
+  nishi:["西九条","Nishikujo Station Osaka"],
+  inari:["伏见稻荷","Fushimi Inari Taisha Kyoto"],
+  kiyo:["清水寺","Kiyomizu-dera Nio-mon Gate Kyoto"],
+  gion:["祇园","Yasaka Shrine Kyoto"],
+  narast:["近铁奈良","Kintetsu Nara Station"],
+  nara:["奈良公园","Nara Park"],
+  todai:["东大寺","Todai-ji Daibutsuden Nara"],
+  dome:["京瓷巨蛋","Kyocera Dome Osaka"],
+  gate:["京瓷巨蛋 1 号门","京セラドーム大阪 1ゲート 大阪市"],
+  kuromon:["黑门市场","Kuromon Ichiba Market Osaka"],
+  castle:["大阪城","Osaka Castle Main Tower"],
+  umeda:["梅田","Osaka Station"],
+  nakazaki:["中崎町","Nakazakicho Station Osaka"],
+  sannomiya:["神户三宫","Hanshin Kobe Sannomiya Station"],
+  nankin:["南京町","Nankinmachi Kobe Chinatown"],
+  port:["神户港边","Kobe Harborland umie"],
+  shinsa:["心斋桥","Shinsaibashi-suji Shopping Street Osaka"],
+  nambaParks:["难波 Parks","Namba Parks Osaka"]
+};
+const days = [
+  ["15","周一","抵达大阪","#6398b8",["kix","namba","doton"],[
+    ["09:45","hkg2","UO850 起飞，香港 T2 出发。","HKT"],["14:20","kix","抵达关西机场 T1，出关后乘车进城。"],["傍晚","store","入住后优先把 20 日纸票领好。罗森导航仅供难波一带参考，具体门店看订单备注。","JST","取纸票"],["晚上","doton","有体力就沿河吃饭逛街。"]]],
+  ["16","周二","环球影城","#b75a94",["namba","nishi","usj"],[
+    ["07:30","namba","预留出发时间，从阪神大阪难波站坐到西九条，换 JR 往环球城。按最终开园时间调整。"],["全天","usj","两人购买指定日期 Studio Pass；任天堂园区入场资格另查。","JST","提前买票"]]],
+  ["17","周三","京都东山","#b57a26",["namba","inari","kiyo","gion"],[
+    ["09:30","inari","先走千本鸟居，按体力决定是否上山。"],["13:00","kiyo","走清水坂到仁王门，逛二年坂与三年坂。"],["16:00","gion","到八坂神社、祇园一带散步，晚饭后返大阪。"]]],
+  ["18","周四","奈良","#438866",["namba","narast","nara","todai"],[
+    ["10:00","narast","可搭近铁直达，出站步行往公园。"],["11:00","nara","奈良公园散步。"],["13:00","todai","参观大佛殿，结束后原路返大阪。"]]],
+  ["19","周五","P 席彩排与演出","#bf514e",["namba","gate","dome"],[
+    ["待确认",null,"票务交接时间和地点待补，上午先留空。"],["12:30–14:30","gate","在 1 号门前办理 P 席本人确认。尽量靠近窗口开始时到场。","JST","14:30 截止"],["15:00","dome","P 席开始入场。"],["15:40","dome","彩排开始。"],["18:00","dome","ENHYPEN 正演。"]]],
+  ["20","周六","第二场演出","#7561b5",["kuromon","dome"],[
+    ["10:30","kuromon","有空在市场附近吃饭，带好已领纸票。"],["14:00","dome","常规入场开始。"],["16:00","dome","ENHYPEN 正演。"]]],
+  ["21","周日","大阪城与梅田","#9d5c38",["namba","castle","nakazaki","umeda"],[
+    ["上午",null,"留半天休息。"],["13:00","castle","大阪城公园散步；想看天守阁可现场购票，预留排队时间。"],["16:30","nakazaki","中崎町逛咖啡店，傍晚可步行到 <a data-place=\"umeda\">梅田</a> 吃饭。"]]],
+  ["22","周一","神户可选","#367c8d",["namba","sannomiya","nankin","port"],[
+    ["10:30","sannomiya","从阪神大阪难波站搭可直达神户三宫的班次。"],["12:00","nankin","南京町午饭。"],["14:30","port","散步到港边，晚饭前后返大阪。累了可以整天留在大阪。"]]],
+  ["23","周二","大阪购物","#9e5681",["namba","shinsa","doton"],[
+    ["11:00","shinsa","日本公休日，逛心斋桥商店街。"],["15:00","doton","补逛道顿堀，购物后回酒店整理行李。"]]],
+  ["24","周三","返程","#4865a1",["nambaParks","namba","kix"],[
+    ["上午",null,"退房后寄存行李。"],["11:00","nambaParks","在难波附近吃饭、补买伴手礼。"],["16:00","namba","建议约这个时间启程，按酒店位置、取行李和列车时刻调整。"],["17:15","kix","建议抵达关西机场 T1。"],["20:15","kix","UO689 起飞。"],["23:55","hkg1","抵达香港 T1，按已确认的夜间接驳离开机场。","HKT"]]]
+];
+const schedule = [
+  ["2027-02-15T09:45:00+08:00","香港快运 UO850 起飞","2/15 09:45 HKT（UTC+8）"],
+  ["2027-02-15T14:20:00+09:00","抵达大阪关西机场 T1","2/15 14:20 JST（UTC+9）"],
+  ["2027-02-16T07:30:00+09:00","出发去 USJ（建议）","2/16 07:30 JST（UTC+9）"],
+  ["2027-02-17T09:30:00+09:00","京都 · 伏见稻荷（建议）","2/17 09:30 JST（UTC+9）"],
+  ["2027-02-18T10:00:00+09:00","奈良 · 近铁奈良站（建议）","2/18 10:00 JST（UTC+9）"],
+  ["2027-02-19T12:30:00+09:00","P 席本人确认开始","2/19 12:30 JST（UTC+9） · 京瓷巨蛋 1 号门前"],
+  ["2027-02-19T14:30:00+09:00","P 席本人确认截止","2/19 14:30 JST（UTC+9） · 排队需提前"],
+  ["2027-02-19T15:00:00+09:00","P 席开始入场","2/19 15:00 JST（UTC+9）"],
+  ["2027-02-19T15:40:00+09:00","ENHYPEN 彩排","2/19 15:40 JST（UTC+9）"],
+  ["2027-02-19T18:00:00+09:00","ENHYPEN 第一场开演","2/19 18:00 JST（UTC+9）"],
+  ["2027-02-20T10:30:00+09:00","黑门市场（建议）","2/20 10:30 JST（UTC+9）"],
+  ["2027-02-20T14:00:00+09:00","ENHYPEN 第二场入场","2/20 14:00 JST（UTC+9）"],
+  ["2027-02-20T16:00:00+09:00","ENHYPEN 第二场开演","2/20 16:00 JST（UTC+9）"],
+  ["2027-02-21T13:00:00+09:00","大阪城（建议）","2/21 13:00 JST（UTC+9）"],
+  ["2027-02-22T10:30:00+09:00","神户三宫（可选）","2/22 10:30 JST（UTC+9）"],
+  ["2027-02-23T11:00:00+09:00","心斋桥（建议）","2/23 11:00 JST（UTC+9）"],
+  ["2027-02-24T16:00:00+09:00","启程去关西机场（建议）","2/24 16:00 JST（UTC+9）"],
+  ["2027-02-24T17:15:00+09:00","到达关西机场 T1（建议）","2/24 17:15 JST（UTC+9）"],
+  ["2027-02-24T20:15:00+09:00","香港快运 UO689 起飞","2/24 20:15 JST（UTC+9）"],
+  ["2027-02-24T23:55:00+08:00","抵达香港国际机场 T1","2/24 23:55 HKT（UTC+8）"]
+];
+const explicitStamps = new Set(schedule.map(([stamp])=>Date.parse(stamp)));
+for (const [day,,,,,items] of days) {
+  for (const [clock,id, ,zone="JST"] of items) {
+    if (!/^\d{2}:\d{2}$/.test(clock)) continue;
+    const offset = zone==="HKT" ? "+08:00" : "+09:00";
+    const stamp = `2027-02-${day}T${clock}:00${offset}`;
+    if (explicitStamps.has(Date.parse(stamp))) continue;
+    schedule.push([stamp,`${places[id][0]}（建议）`,`2/${day} ${clock} ${zone}（UTC+${zone==="HKT"?8:9}）`]);
+  }
+}
+const exact = schedule.map(([stamp,label,display])=>[Date.parse(stamp),label,display]).sort((a,b)=>a[0]-b[0]);
+const directions = (stops, mode="transit") => {
+  const params = new URLSearchParams({api:"1",destination:places[stops.at(-1)][1],travelmode:mode});
+  if (stops.length>1) params.set("origin",places[stops[0]][1]);
+  if (stops.length>2) params.set("waypoints",stops.slice(1,-1).map(id=>places[id][1]).join("|"));
+  return "https://www.google.com/maps/dir/?"+params;
+};
+const link = (id,label=places[id][0])=>`<a data-place="${id}">${label}</a>`;
+const dayRoutes = [
+  "M205 269 Q240 230 282 184T355 153","M350 150 Q302 133 276 133T220 151","M355 148 Q399 101 426 65T476 40","M355 156 Q444 164 510 179","M355 151 Q325 149 310 160","M356 165 Q329 166 310 163","M357 149 Q394 120 390 106T357 91","M351 148 Q252 92 159 100T74 111","M356 158 Q365 143 372 139","M355 160 Q280 193 242 234T205 272"
+];
+const regionalPoints = [[74,111,"神户","sannomiya"],[476,40,"京都","gion"],[510,179,"奈良","narast"],[355,154,"大阪住宿区","namba"],[220,151,"USJ","usj"],[306,166,"京瓷巨蛋","dome"],[205,269,"关西机场","kix"],[391,102,"大阪城","castle"]];
+const anchor = (href,body)=>`<a href="${href.replaceAll("&","&amp;")}" target="_blank" rel="noopener">${body}</a>`;
+document.querySelector("#regional").innerHTML = `<svg viewBox="0 0 580 300" class="map" role="group" aria-label="大阪、京都、奈良、神户和机场路线示意">
+<path class="water" d="M0 138 Q92 137 142 159T280 172Q313 180 282 212T205 252Q175 268 156 300H0Z"/>
+<path d="M15 38Q122 8 197 41T334 63M404 244q85 12 158-19M498 80q41 13 66 5" fill="none" stroke="#9d8eb2" stroke-dasharray="5 7" opacity=".65"/>
+<text x="63" y="225" font-size="16">大阪湾</text>
+${dayRoutes.map((d,i)=>`<path d="${d}" fill="none" stroke="${days[i][3]}" stroke-width="${i===5?4:3.5}" stroke-dasharray="${i===7?"6 5":"none"}" stroke-linecap="round"/>`).join("")}
+${regionalPoints.map(([x,y,label,id])=>anchor(directions([id]),`<circle cx="${x}" cy="${y}" r="4.5" fill="var(--ink)"/><text x="${id==="dome"?x-9:x+8}" y="${id==="dome"?y+20:y-7}" text-anchor="${id==="dome"?"end":"start"}" font-size="18">${label}</text>`)).join("")}
+</svg>`;
+document.querySelector("#legend").innerHTML = days.map(([day,,title,color])=>`<li style="--route:${color}"><a href="#day-${day}"><span class="dot"></span>${day} 日 ${title}</a></li>`).join("");
+function localMap(route,color) {
+  const step = 560/route.length;
+  const pts = route.map((id,i)=>[step*(i+.5),i%2===0?63:86,id]);
+  const path = pts.map(([x,y],i)=>i===0?`M${x} ${y}`:`Q${x-step/2} ${y+(i%2?12:-12)} ${x} ${y}`).join(" ");
+  return `<svg viewBox="0 0 560 116" class="map" role="group" aria-label="按顺序排列的当日路线示意"><path d="${path}" stroke="${color}" stroke-width="4" fill="none" stroke-linecap="round"/>${pts.map(([x,y,id],i)=>anchor(directions([id]),`<circle cx="${x}" cy="${y}" r="6" fill="${color}"/><text x="${x}" y="${i%2===0?y-17:y+20}" text-anchor="middle" font-size="20">${places[id][0]}</text>`)).join("")}</svg>`;
+}
+const fixedTimes = new Set(["15/09:45","15/14:20","19/12:30–14:30","19/15:00","19/15:40","19/18:00","20/14:00","20/16:00","24/20:15","24/23:55"]);
+document.querySelector("#daily").innerHTML = days.map(([day,weekday,title,color,route,items])=>{
+  const segments = route.slice(1).map((id,i)=>anchor(directions([route[i],id],day==="22"&&i>0?"walking":"transit"),places[route[i]][0]+" → "+places[id][0])).join("");
+  const overnight = day==="24"?"夜间 · 抵达香港，接驳待定":"今晚 · 大阪（酒店待定）";
+  return `<article class="day" id="day-${day}" style="--route:${color}">
+    <h3><span>2/${day} ${weekday}</span>${title}</h3>
+    <details><summary>展开当日路线地图</summary>${localMap(route,color)}
+    <a class="button" href="${directions(route).replaceAll("&","&amp;")}" target="_blank" rel="noopener">在 Google 地图打开全天路线</a>
+    <div class="segments">${segments}${day==="15"?link("hkg2","去香港机场 T2"):""}${day==="24"?link("hkg1","香港机场 T1"):""}</div></details>
+    <ol>${items.map(([clock,id,description,zone="JST",tag])=>`<li><span class="time">${clock}<small>${zone}${clock.includes(":")&&!fixedTimes.has(day+"/"+clock)?" · 建议":""}</small></span><div>${id?link(id)+" · ":""}${description}${tag?`<span class="tag">${tag}</span>`:""}</div></li>`).join("")}</ol><p class="night">${overnight}</p></article>`;
+}).join("");
+document.querySelectorAll("[data-place]").forEach(el=>{
+  el.href=directions([el.dataset.place]);
+  el.target="_blank";
+  el.rel="noopener";
+});
+function renderCountdown(){
+  const now=Date.now();
+  const next=exact.find(([stamp])=>stamp>now);
+  document.querySelector("#next").textContent=next?next[1]:"行程已结束";
+  document.querySelector("#when").textContent=next?next[2]:"2027 年大阪之旅";
+  const seconds=next?Math.ceil((next[0]-now)/1000):0;
+  [Math.floor(seconds/86400),Math.floor(seconds/3600)%24,Math.floor(seconds/60)%60,seconds%60].forEach((value,i)=>{
+    document.getElementById(["days","hours","minutes","seconds"][i]).textContent=String(value).padStart(2,"0");
+  });
+}
+renderCountdown();
+setInterval(renderCountdown,1000);
+document.querySelector("#save").addEventListener("click",()=>{
+  const copy=document.documentElement.cloneNode(true);
+  copy.querySelectorAll("#regional,#legend,#daily").forEach(el=>el.replaceChildren());
+  const url=URL.createObjectURL(new Blob(["<!doctype html>\n",copy.outerHTML],{type:"text/html;charset=utf-8"}));
+  const download=document.createElement("a");
+  download.href=url;
+  download.download="osaka-trip-2027.html";
+  document.body.append(download);
+  download.click();
+  download.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),30000);
+});
+</script>
+</body>
+</html>
